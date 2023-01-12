@@ -1,0 +1,31 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Register{% endblock %}
+
+
+
+{% block body %}
+    {# <h1 class="text-center">Register</h1> #}
+<div class="form-group">      
+
+    <div class="form-group">
+
+    {{ form_start(registrationForm) }}
+        <img class="img_login" src="{{ path('images',{'file':'login.png'}) }}" alt="">    
+
+         <h1 class="title_R h3 mb-3 font-weight-normal text-center">Register Page</h1>
+
+        {{ form_row(registrationForm.email) }}
+        {{ form_row(registrationForm.plainPassword, {
+            label: 'Password'
+        }) }}
+        {{ form_row(registrationForm.agreeTerms) }}
+
+        <button type="submit" class="btn btn-lg btn-primary register_btn">Register</button>
+        <button  class="btn btn-lg btn-primary login_btn" type="submit">
+        <a href="/login" > Login
+    </button>
+    </div>
+</div>
+    {{ form_end(registrationForm) }}
+{% endblock %}

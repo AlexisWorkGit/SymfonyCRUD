@@ -1,0 +1,34 @@
+#registration_form_email{
+    background-color: white;
+    margin-left: 40px;
+}
+
+#registration_form_plainPassword{
+    margin-left: 10px;
+    background-color: white;
+}
+
+#registration_form_agreeTerms{
+    width: 20px;
+}
+
+.title_R{
+    margin-left: 50px;
+}
+
+.register_btn{
+    width: 300px;
+margin-left: 80px;
+margin-top: 10px;
+margin-bottom: 10px;
+}
+.login_btn{
+    width: 300px;
+margin-left: 80px;
+margin-top: 10px;
+margin-bottom: 10px;
+}
+.login_btn > a {
+    color: white;
+    text-decoration: none;
+}

@@ -1,0 +1,26 @@
+# controllers:
+#   resource: ../src/Controller/
+#   type: attribute
+# dashboard:
+#   name: dashboard
+#   type: string
+#   resources: ../src/Controller/
+dashboard:
+  path: /dashboard
+  controller: App\Controller\Admin\DashboardController::index
+login:
+  path: /login
+  controller: App\Controller\SecurityController::login
+register:
+  path: /register
+  controller: App\Controller\RegistrationController::register
+css_files:
+  path: /css/{file}
+  controller: App\Controller\AssetController::css
+  requirements:
+    file: .+\.css
+images:
+  path: /images/{file}
+  controller: App\Controller\AssetController::images
+  requirements:
+    file: .+\.png
